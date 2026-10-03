@@ -1,0 +1,24 @@
+{
+  "name": "flowboard",
+  "version": "0.1.0",
+  "private": true,
+  "packageManager": "npm@11.12.1",
+  "engines": {
+    "node": ">=24 <25",
+    "npm": ">=11"
+  },
+  "scripts": {
+    "dev": "concurrently --names web,api --kill-others-on-fail \"npm run dev:web\" \"npm run dev:api\"",
+    "dev:web": "npm run dev --workspace=@flowboard/web",
+    "dev:api": "npm run dev --workspace=@flowboard/api",
+    "lint": "npm run lint --workspaces --if-present",
+    "typecheck": "npm run typecheck --workspaces --if-present",
+    "build": "npm run build --workspaces --if-present"
+  },
+  "workspaces": [
+    "apps/*"
+  ],
+  "devDependencies": {
+    "concurrently": "^10.0.5"
+  }
+}
