@@ -3,13 +3,23 @@
     "target": "ESNext",
     "module": "NodeNext",
     "moduleResolution": "NodeNext",
+
     "rootDir": "src",
     "outDir": "dist",
+
     "strict": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noFallthroughCasesInSwitch": true,
+    "noUncheckedIndexedAccess": true,
+    "exactOptionalPropertyTypes": true,
+    "noImplicitReturns": true,
+
     "types": ["node"],
     "verbatimModuleSyntax": true,
     "rewriteRelativeImportExtensions": true,
     "erasableSyntaxOnly": true,
+
     "noEmitOnError": true,
     "sourceMap": true
   },
