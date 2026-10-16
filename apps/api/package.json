@@ -5,6 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "node --watch src/server.ts",
+    "lint": "eslint .",
     "typecheck": "tsc --noEmit",
     "build": "tsc",
     "start": "node dist/server.js"
@@ -13,8 +14,12 @@
     "express": "^5.2.1"
   },
   "devDependencies": {
+    "@eslint/js": "^10.0.1",
     "@types/express": "^5.0.6",
     "@types/node": "^24.19.1",
-    "typescript": "^6.0.3"
+    "eslint": "^10.13.0",
+    "globals": "^17.13.0",
+    "typescript": "^6.0.3",
+    "typescript-eslint": "^8.71.2"
   }
 }
