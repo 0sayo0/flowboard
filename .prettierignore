@@ -1,0 +1,18 @@
+# Dependencies
+node_modules/
+
+# Build outputs
+**/dist/
+**/build/
+
+# Test outputs
+coverage/
+playwright-report/
+test-results/
+
+# Tool caches
+.vite/
+*.tsbuildinfo
+
+# Generated dependency metadata
+package-lock.json

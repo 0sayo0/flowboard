@@ -1,12 +1,12 @@
-import express from "express";
+import express from 'express';
 
 const app = express();
 const PORT = 3000;
 
-app.get("/", (_request, response) => {
+app.get('/', (_request, response) => {
   response.json({
-    name: "FlowBoard API",
-    status: "running",
+    name: 'FlowBoard API',
+    status: 'running',
   });
 });
 

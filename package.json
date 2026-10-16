@@ -12,6 +12,8 @@
     "dev:web": "npm run dev --workspace=@flowboard/web",
     "dev:api": "npm run dev --workspace=@flowboard/api",
     "lint": "npm run lint --workspaces --if-present",
+    "format": "prettier . --write",
+    "format:check": "prettier . --check",
     "typecheck": "npm run typecheck --workspaces --if-present",
     "build": "npm run build --workspaces --if-present"
   },
@@ -19,6 +21,7 @@
     "apps/*"
   ],
   "devDependencies": {
-    "concurrently": "^10.0.5"
+    "concurrently": "^10.0.5",
+    "prettier": "3.9.10"
   }
 }
